@@ -8,7 +8,7 @@
             .state('/cab', {
               url: '/cab',
               templateUrl: '/app/tasks/tpl.html',
-              controller: tasksCtrl,
+              controller: 'tasksCtrl as ctrl',
               params: {
                 name: undefined,
                 password: undefined
@@ -17,6 +17,6 @@
             .state('/main', {
               url: "/main",
               templateUrl: '/app/login/tpl.html',
-              controller: loginCtrl,
+              controller: 'loginCtrl as ctrl',
             })
         });
